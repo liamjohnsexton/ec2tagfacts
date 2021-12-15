@@ -52,6 +52,11 @@ class ec2tagfacts::params {
         $awscli_pkg   = 'pip' # package provider for centos6
       }
     }
+    'windows': {
+      $awscli = 'awscli'
+    }
+
+
     'Fedora': {
       $awscli       = 'awscli'
       $enable_epel  = true
